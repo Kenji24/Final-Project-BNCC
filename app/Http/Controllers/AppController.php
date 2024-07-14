@@ -33,7 +33,7 @@ class AppController extends Controller
     }
 
     public function about(){
-        return view('nav.about');
+        return view('about');
     }
 
     public function search(Request $request){
