@@ -123,7 +123,13 @@
                         <input type="text" class="quantityDisplay" style="border: 2px solid #1E87C8; width:30px; text-align:center;" value="1" />
                         <button class="increaseBtn" style="color:#1E87C8; background: white; border: 2px solid #1E87C8"><i class="bi bi-plus-lg"></i></button>
                     </div>
-                    <div class="stock-display">stock: {{ $toy->stock }}</div>
+
+                    @if ($toy->stock>0)
+                        <div class="stock-display">stock: {{ $toy->stock }}</div>
+                    @else
+                        <div class="stock-display">Stok Habis</div>
+                    @endif
+
                 </div>
                 <div style="display: flex; flex-direction: row; gap: 5px; padding-top: 10px; padding-bottom: 20px; border-block-end: 2px solid black;">
                     <input type="hidden" name="pro_id" value="{{ $toy->id }}" class="product_id">
@@ -132,7 +138,11 @@
                         <button class="addCart primaryBtn" style="width: 315px">Add to Cart<i class="bi bi-cart-plus"></i></button>
                     </div>
                     <div class="buyNow">
-                        <button class="submit primaryBtn" style="width: 315px">Buy Now!</button>
+                        @if ($toy->stock>0)
+                            <button class="submit primaryBtn" style="width: 315px">Buy Now!</button>
+                        @else
+                            <button class="submit primaryBtn" style="width: 315px" disabled>Buy Now!</button>
+                        @endif
                     </div>
                 </div>
                 <div>
