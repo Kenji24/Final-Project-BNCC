@@ -16,7 +16,7 @@
     <div class="table_container">
         <div class="tabel_head">
             Items List
-            <div class="ikontol">
+            <div class="icon">
                 <a href="{{ route('admin.create') }}"><i class="bi bi-plus-square-fill" style="color: black"></i></a>
                 <i class="bi bi-trash3-fill"></i>
             </div>
