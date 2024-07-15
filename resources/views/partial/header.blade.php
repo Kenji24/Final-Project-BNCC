@@ -9,13 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link mx-2 active" aria-current="page" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link mx-2 {{request()->routeIs('home') ? 'active' : ''}}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="{{ route('product.menu') }}">Product</a>
+                    <a class="nav-link mx-2 {{request()->routeIs('product.menu') ? 'active' : ''}}" href="{{ route('product.menu') }}">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="{{ route('about') }}">About Us</a>
+                    <a class="nav-link mx-2 {{request()->routeIs('about') ? 'active' : ''}}" href="{{ route('about') }}">About Us</a>
                 </li>
             </ul>
             <div class="d-flex align-items-center">

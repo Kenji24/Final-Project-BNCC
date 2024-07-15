@@ -20,10 +20,15 @@
                 <p class="text-muted">Jalan Awooga, Kota Awikwok, Indonesia</p>
                 <p class="text-muted">Email: support@cunnystore.com</p>
                 <p class="text-muted">Phone: (123) 456-7890</p>
-                <div>
+                <div class='container'>
                     <a href="#" class="text-muted me-2"><i class="bi bi-facebook"></i></a>
+                    <label>Cunny Store Official</label>
+                    <br>
                     <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                    <label>@cunnystore_official</label>
+                    <br>
                     <a href="#" class="text-muted me-2"><i class="bi bi-instagram"></i></a>
+                    <label>@cunny_store</label>
                 </div>
             </div>
         </div>
