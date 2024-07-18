@@ -15,7 +15,6 @@ Route::controller(AppController::class)->group(function(){
     Route::get('search', 'search')->name('product.search');
     Route::get('product/filter/{category}', 'filterMenu')->name('product.filter');
     Route::get('about', 'about')->name('about');
-    // Route::get('about', [AppController::class, 'about'])->name('about');
 
     Route::middleware('guest')->group(function (){
         Route::get('login', 'login')->name('login');
