@@ -115,7 +115,13 @@
                         </div>
                         <div class="price-card d-flex justify-content-between align-items-center">
                             <span class="price-tag">Rp  {{ number_format($toy->price) }}</span>
-                            <a href="{{ route('toy.order', $toy) }}" style="text-decoration: none"><button class="sm-buy-btn d-flex justify-content-between">Buy<i class="bi bi-cart-plus"></i></button></a>
+                            @if($toy->stock>0)
+                                <a href="{{ route('toy.order', $toy) }}" style="text-decoration: none"><button class="sm-buy-btn d-flex justify-content-between">Buy<i class="bi bi-cart-plus"></i></button></a>
+
+                            @else
+                                <a href="{{ route('toy.order', $toy) }}" style="text-decoration: none"><button class="sm-buy-btn d-flex justify-content-between" style="background-color: grey;">Stok habis</button></a>
+
+                            @endif
                         </div>
                     </div>
                 </a>
