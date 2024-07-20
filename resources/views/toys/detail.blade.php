@@ -141,7 +141,7 @@
                         @if ($toy->stock>0)
                             <button class="submit primaryBtn" style="width: 315px">Buy Now!</button>
                         @else
-                            <button class="submit primaryBtn" style="width: 315px" disabled>Buy Now!</button>
+                            <button class="submit primaryBtn" style="width: 315px; background-color: grey;" disabled>Stok habis</button>
                         @endif
                     </div>
                 </div>
