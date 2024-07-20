@@ -45,7 +45,7 @@
                     <select class="form-select form-select-sm mb-2" aria-label="Small select example" name="category_id" style="color:#1E87C8;">
                         <option selected style="color:#1E87C8;">Select Category</option>
                         @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}" {{$toy->category_id == $category->id ? 'selected':''}}>{{ $category->name }}</option>
                         @endforeach
                     </select>
                     <div class="mb-2">
