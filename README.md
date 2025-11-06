@@ -8,9 +8,9 @@ Final Projek dalam kelas Back-End BNCC yaitu membuat website e-commerce dengan t
 
 # Arsitektur
 Website ini memiliki arsitektur sederhana dimana:
-1. Front-End: menggunakan CSS sederhana dari CSS, JS dan bootstrap
+1. Front-End: dibuat sederhana menggunakan HTML, CSS, JS dan Bootstrap
 2. Back-End: menggunakan framework Laravel
-3. Database: database yang digunakan adalah SQL dari MySQL
+3. Database: database yang digunakan adalah MySQL
 
 <img src="preview/database_schema.png" alt="database_schema" width="600">
 
