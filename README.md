@@ -1,5 +1,6 @@
 ﻿# Final-Project-BNCC
 Final Projek dalam kelas Back-End BNCC yaitu membuat website e-commerce dengan tema toko mainan. Website yang kami buat menjual mainan figure dari jepang dengan referensi UI diambil berdasarkan website kyou hobby shop.
+
 <img src="preview/home_page.png" alt="home_page" width="600">
 <img src="preview/product_page.png" alt="product_page" width="600">
 <img src="preview/admin_page.png" alt="admin_page" width="600">
@@ -35,8 +36,8 @@ terdapat 3 skenario utama pada website ini:
 melihat, mencari dan memfilter halaman dashboard mainan serta melihat detail mainan yang ada
 3. User
 dapat melakukan hal yang sama dengan Guest tapi memiliki tambahan dapat melakukan pembelian mainan dengan 2 metode:
-- membeli langsung mainan tersebut
-- membeli melalui cart yang ada   
+    - membeli langsung mainan tersebut
+    - membeli melalui cart yang ada 
 5. Admin
 memiliki akses untuk menambah, mengubah dan menghapus mainan yang tersedia
 
